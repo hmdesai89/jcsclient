@@ -1,0 +1,21 @@
+
+NAME :
+    detach-network-interface
+
+
+DESCRIPTION :
+    Detaches network interfaces from instance
+
+
+SYNOPSIS :
+    detach-network-interface
+    [--attachment-id <values>]
+
+
+OPTIONS :
+
+
+EXAMPLES :
+    jcs compute detach-network-interface
+
+    jcs compute detach-network-interface --attachment-id eni-attach-37ee61cf

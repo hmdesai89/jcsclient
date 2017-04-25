@@ -1,0 +1,23 @@
+
+NAME :
+    attach-network-interface
+
+
+DESCRIPTION :
+    Attaches network interfaces to instance
+
+
+SYNOPSIS :
+    attach-network-interface
+    [--instance-id <values>]
+    [--network-interface-id <values>]
+    [--device-index <values>]
+
+
+OPTIONS :
+
+
+EXAMPLES :
+    jcs compute attach-network-interface
+
+    jcs compute attach-network-interface --instance-id i-54278fc0 --network-interface-id eni-37ee61cf --device-index 1

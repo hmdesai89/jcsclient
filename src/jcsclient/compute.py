@@ -27,6 +27,7 @@ from jcsclient.compute_api import key_pair
 from jcsclient.compute_api import instance
 from jcsclient.compute_api import volume
 from jcsclient.compute_api import snapshot
+from jcsclient.compute_api import network_interface
 
 class Controller(object):
     """Compute Controller class
@@ -371,5 +372,27 @@ class Controller(object):
            suppress detail
         """
         return snapshot.describe_snapshots(self.url, self.verb,
+                                    self.headers, self.version,
+                                    args)
+    
+    def attach_network_interface(self,args):
+        """
+        Attach network interface to instance
+
+        param args: Arguments passed to the function
+
+        """
+        return network_interface.attach_network_interface(self.url, self.verb,
+                                    self.headers, self.version,
+                                    args)
+
+    def detach_network_interface(self,args):
+        """
+        Detach network interface attached to instance
+
+        param args: Arguments passed to the function
+
+        """
+        return network_interface.detach_network_interface(self.url, self.verb,
                                     self.headers, self.version,
                                     args)

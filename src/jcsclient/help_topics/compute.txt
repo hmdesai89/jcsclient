@@ -41,6 +41,9 @@ AVAILABLE COMMANDS :
     update-delete-on-termination-flag
  
     get-password-data
+    
+    attach-network-interface
+    detach-network-interface
 
 To see detailed help for any command, type
     jcs compute <command> help
