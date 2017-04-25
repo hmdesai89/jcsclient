@@ -1,0 +1,25 @@
+NAME
+      create-network-interface - Creates network interface in given subnet.
+
+SYNOPSIS
+      create-network-interface [--subnet-id <value>] [--security-group-ids <value1> <value2>] [--description <value>]
+      create-network-interface [help]
+
+DESCRIPTION
+       Creates network interface in your account for specific subnet. Also adds 
+       security groups. If no security group is provided then default security group
+       of that vpc will used on network interface.
+
+       Mandatory arguments: subnet-id
+       Optional arguments: security-group-ids, description
+
+
+OPTIONS :
+       --subnet-id specify subnet in which network interface will be created
+       --security-group-ids value of securty groups
+       --description description for network interface
+
+EXAMPLES :
+       jcs vpc create-network-interface --subnet-id subnet-111122 --security-group-ids sg-123456 sg-098765 
+       --description 'test interface'
+

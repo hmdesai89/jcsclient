@@ -1,0 +1,18 @@
+NAME
+      delete-network-interface - Deletes your network-interface
+
+SYNOPSIS
+      delete-network-interface --netowrk-interface-id <network-interface-id-value>
+      delete-network-interface [help]
+
+DESCRIPTION
+       Deletes the specified network-interface.
+
+       Mandatory arguments: --network-interface-id
+
+OPTIONS :
+       --network-interface-id The unique identifier of the network-interface to delete.
+
+EXAMPLES :
+       jcs vpc delete-network-interface --network-interface-id eni-894beq21
+
